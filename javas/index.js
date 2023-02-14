@@ -10,8 +10,12 @@ var randomimgsur2 = "images/" + randomimg2;
 var image2 = document.querySelectorAll("img")[1];
 image2.setAttribute("src",randomimgsur2);
 if (randomnumimg > randomnumimg2) {
-    document.querySelectorAll("p")[0].innerHTML = "Player 1🚩"
+    document.querySelector("h1").innerHTML = "🚩Player 1";
+}
+else if (randomnumimg < randomnumimg2) {
+    document.querySelector("h1").innerHTML = "Player 2🚩";
 }
 else {
- document.querySelectorAll("p")[1].innerHTML = "Player 2🚩"
+    document.querySelector("h1").innerHTML = "Draw!";
 }
+
